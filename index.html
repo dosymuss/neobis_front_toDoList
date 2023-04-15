@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="main-wrapper" >
+        <div class="header">
+            <h1 class="header-title">What's up, <input type="text" placeholder="Name her" id="header__inp"></h1>
+        </div>
+        <div class="main">
+            <div class="main-create__div">
+                <p class="name">CREATE A TODO</p>
+                <p class="instruction">What's on your todo list?</p>
+                <input type="text" id="main-create__inp" placeholder="e. g. get a milk">
+            </div>
+            <div class="main-category__div">
+                <p class="instruction">Pick a category</p>
+                <div class="main-category-btn__div">
+                    <div class="main-category__btn">
+                        <label>
+                            <input type="radio" name="category" class="real-radio" id="radio-business" value="bus">
+                            <span class="custom-radio-business" id="business"></span>
+                            <p class="radio-words">Business</p>
+                        </label>
+
+                    </div>
+                    <div class="main-category__btn">
+                        <label>
+                            <input type="radio" id="radio-personal" class="real-radio" name="category" value="pers">
+                            
+                            <span class="custom-radio-personal" id="personal"></span>
+                            <p class="radio-words">Personal</p>
+                        </label>
+                    </div>
+                </div>
+                <button class="submit-btn">Add todo</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="name">TODO LIST</p>
+            <div class="list-wrapper">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
